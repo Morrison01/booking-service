@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Imported Products</title>
+</head>
+<body>
+    <h1></h1>
+    <ul>
+        {% for product in products %}
+            <li>
+                <strong>{{ product.name }}</strong><br>
+                Price: {{ product.price }}<br>
+                Country of Origin: {{ product.origin_country }}<br>
+                Import Date: {{ product.import_date }}<br>
+                {{ product.description }}<br>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
